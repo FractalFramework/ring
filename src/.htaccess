@@ -1,0 +1,8 @@
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^get/cities$ /call.php?action=get_cities [L]
+RewriteRule ^post/cities$ /call.php?action=post_city [L]
+RewriteRule ^del/cities/:([^./]+)$ /call.php?action=del_city&city_id=$1 [L]
+RewriteRule ^get/cities/:([^./]+)/weather$ /call.php?action=get_weather&city_id=$1 [L]
+RewriteRule ^post/cities/:([^./]+)/weather$ /call.php?action=post_weather&city_id=$1 [L]
+RewriteRule ^del/cities/:([^./]+)/weather/:([^./]+)$ /call.php?action=del_weather&city_id=$1&weather_id=$2 [L]
