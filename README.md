@@ -10,7 +10,7 @@ Php/Mysql/Ajax
 
 Avec ce combo de base n'importe qui peut initier et comprendre la majorité des projets web, sans faire appel à une tierce-partie (totalement Vanilla).
 
-#Moteur Ajax
+# Moteur Ajax
 
 > ajax_call('form_name','callback_action','target')
 
